@@ -1,0 +1,156 @@
+{
+    "Lambda": {
+        "description": "A serverless compute service for running code.",
+        "benefits": ["No server management", "Event-driven", "Highly scalable"],
+        "use_cases": ["Event processing", "Serverless backends", "ETL"],
+        "alternatives": ["Fargate", "EC2"],
+        "decision_factors": ["Best for short-running workloads", "Pay-per-use model"],
+        "cloud_provider": "AWS"
+    },
+    "Dynamodb": {
+        "description": "A NoSQL database service for serverless architectures.",
+        "benefits": ["Fully managed", "Highly available", "Low latency"],
+        "use_cases": ["High throughput applications", "Serverless architectures", "Real-time apps"],
+        "alternatives": ["Aurora", "RDS"],
+        "decision_factors": ["Schema-less design", "Cost-effective for NoSQL workloads"],
+        "cloud_provider": "AWS"
+    },
+    "Aurora": {
+        "description": "A relational database service that is compatible with MySQL and PostgreSQL.",
+        "benefits": ["High performance", "Scalable", "Cost-effective compared to traditional RDS"],
+        "use_cases": ["Transactional databases", "Relational data storage", "Enterprise applications"],
+        "alternatives": ["RDS", "DynamoDB"],
+        "decision_factors": ["Best for relational workloads requiring scalability"],
+        "cloud_provider": "AWS"
+    },
+    "S3": {
+        "description": "An object storage service for storing and retrieving data.",
+        "benefits": ["Highly scalable", "Low-cost storage", "99.999999999% durability"],
+        "use_cases": ["Backup and restore", "Data lakes", "Static website hosting"],
+        "alternatives": ["Azure Blob Storage", "Google Cloud Storage"],
+        "decision_factors": ["Best for unstructured data storage", "Pay-per-use pricing model"],
+        "cloud_provider": "AWS"
+    },
+    "Redshift": {
+        "description": "A fully managed data warehouse service for analytics.",
+        "benefits": ["High-performance queries", "Supports petabyte-scale data", "Integrates with BI tools"],
+        "use_cases": ["Data warehousing", "Business intelligence", "Big data analytics"],
+        "alternatives": ["Snowflake", "BigQuery"],
+        "decision_factors": ["Best for large-scale analytical workloads", "Seamless integration with AWS"],
+        "cloud_provider": "AWS"
+    },
+    "Glue": {
+        "description": "A serverless data integration service for preparing and transforming data.",
+        "benefits": ["Simplified ETL", "Scalable", "Integrated with AWS analytics services"],
+        "use_cases": ["Data pipelines", "Data preparation for analytics", "Cataloging datasets"],
+        "alternatives": ["Azure Data Factory", "Google Cloud Dataflow"],
+        "decision_factors": ["Best for ETL workflows on AWS", "Supports Python and Spark"],
+        "cloud_provider": "AWS"
+    },
+    "CloudFront": {
+        "description": "A content delivery network (CDN) for delivering data, videos, applications, and APIs globally.",
+        "benefits": ["Low latency", "High transfer speeds", "Global edge network"],
+        "use_cases": ["Static content delivery", "Video streaming", "Web applications"],
+        "alternatives": ["Azure CDN", "Google Cloud CDN"],
+        "decision_factors": ["Best for global content delivery", "Supports caching and traffic optimization"],
+        "cloud_provider": "AWS"
+    },
+    "Athena": {
+        "description": "A serverless query service for analyzing data directly in S3 using standard SQL.",
+        "benefits": ["No ETL required", "Serverless", "Cost-effective for on-demand queries"],
+        "use_cases": ["Data lake analytics", "Ad hoc querying", "Log analysis"],
+        "alternatives": ["BigQuery", "Redshift Spectrum"],
+        "decision_factors": ["Best for querying data in S3 without data movement"],
+        "cloud_provider": "AWS"
+    },
+    "Kinesis": {
+        "description": "A service for real-time data streaming in AWS.",
+        "benefits": ["Process real-time data", "Scalable", "Integrates with AWS analytics services"],
+        "use_cases": ["Real-time analytics", "Log processing", "Event streaming"],
+        "alternatives": ["Apache Kafka", "Azure Event Hub"],
+        "decision_factors": ["Best for real-time data ingestion and streaming on AWS"],
+        "cloud_provider": "AWS"
+    },
+    "IAM": {
+        "description": "Identity and Access Management for securely managing access to AWS services.",
+        "benefits": ["Granular access control", "Multi-factor authentication", "Integrated with all AWS services"],
+        "use_cases": ["User authentication", "Service-level permissions", "Audit trails"],
+        "alternatives": ["Custom identity providers", "Azure AD"],
+        "decision_factors": ["Centralized access control", "Supports role-based policies"],
+        "cloud_provider": "AWS"
+    },
+    "CloudWatch": {
+        "description": "A monitoring and observability service for AWS applications.",
+        "benefits": ["Real-time monitoring", "Logs aggregation", "Alerts and dashboards"],
+        "use_cases": ["Application performance monitoring", "Log aggregation", "Setting alarms"],
+        "alternatives": ["Datadog", "Prometheus"],
+        "decision_factors": ["Best for AWS-native monitoring", "Integrated with AWS services"],
+        "cloud_provider": "AWS"
+    },
+    "SQS": {
+        "description": "A fully managed message queuing service for decoupling applications.",
+        "benefits": ["Fully managed", "Supports FIFO and Standard queues", "Highly scalable"],
+        "use_cases": ["Decoupling microservices", "Message buffering", "Task queues"],
+        "alternatives": ["Kafka", "Azure Queue Storage"],
+        "decision_factors": ["Best for asynchronous communication", "Pay-per-use pricing"],
+        "cloud_provider": "AWS"
+    },
+    "SNS": {
+        "description": "A notification service for delivering messages to subscribers.",
+        "benefits": ["Real-time notifications", "Supports multiple protocols", "Highly reliable"],
+        "use_cases": ["Application notifications", "Pub/Sub architectures", "Alarms and alerts"],
+        "alternatives": ["Azure Notification Hubs", "Firebase Cloud Messaging"],
+        "decision_factors": ["Best for Pub/Sub patterns", "Integrates well with SQS and Lambda"],
+        "cloud_provider": "AWS"
+    },
+
+    "Elastic Load Balancer": {
+        "description": "Distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses.",
+        "benefits": ["Improves availability", "Supports auto-scaling", "Handles fault tolerance"],
+        "use_cases": ["High-traffic web applications", "Microservices architectures", "Hybrid cloud setups"],
+        "alternatives": ["API Gateway (for APIs)", "Nginx (custom setups)"],
+        "decision_factors": ["Best for load balancing across instances or containers", "Supports HTTP/HTTPS and TCP protocols"],
+        "cloud_provider": "AWS"
+    },
+    "Elastic File System": {
+        "description": "A scalable, fully managed elastic file storage system that can be shared across multiple AWS services.",
+        "benefits": ["Fully managed", "Scalable", "Supports concurrent access"],
+        "use_cases": ["Content management systems", "Big data processing", "Shared storage for applications"],
+        "alternatives": ["Amazon FSx", "Amazon S3"],
+        "decision_factors": ["Best for shared file storage with elastic scaling", "Supports NFS protocols"],
+        "cloud_provider": "AWS"
+    },
+    "Route53": {
+        "description": "A scalable DNS and domain name registration service.",
+        "benefits": ["Highly available", "Globally distributed", "Integrated with AWS services"],
+        "use_cases": ["Domain name management", "Load balancing DNS", "Failover routing"],
+        "alternatives": ["Cloudflare DNS", "Google Cloud DNS"],
+        "decision_factors": ["Best for DNS routing with AWS integrations", "Supports advanced routing policies"],
+        "cloud_provider": "AWS"
+    },
+    "FSx": {
+        "description": "A managed file storage service that supports Windows File Server and Lustre.",
+        "benefits": ["Low latency", "Supports SMB protocols", "High-performance computing (HPC)"],
+        "use_cases": ["Shared file systems for Windows applications", "HPC workloads", "Media processing"],
+        "alternatives": ["EFS", "S3"],
+        "decision_factors": ["Best for shared file systems with specific protocol requirements", "Integrated with AWS services"],
+        "cloud_provider": "AWS"
+    },
+    "Elastic Transcoder": {
+        "description": "A service for converting media files into formats required by devices like smartphones and tablets.",
+        "benefits": ["Fully managed", "Cost-effective", "Supports multiple formats"],
+        "use_cases": ["Video and audio transcoding", "Streaming media processing", "Content delivery"],
+        "alternatives": ["Elemental MediaConvert", "FFmpeg (self-managed)"],
+        "decision_factors": ["Best for basic media transcoding", "Supports popular media formats"],
+        "cloud_provider": "AWS"
+    },
+    "Amazon MQ": {
+        "description": "A managed message broker service for Apache ActiveMQ and RabbitMQ.",
+        "benefits": ["Fully managed", "Supports popular messaging protocols", "Highly available"],
+        "use_cases": ["Decoupling microservices", "Message queuing", "Real-time messaging"],
+        "alternatives": ["SQS", "Kafka"],
+        "decision_factors": ["Best for existing applications using ActiveMQ or RabbitMQ", "Seamless migration from on-premises"],
+        "cloud_provider": "AWS"
+    }
+}
+

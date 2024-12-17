@@ -1,0 +1,29 @@
+Lambda: A serverless compute service for running code.
+Benefits: No server management, Event-driven, Highly scalable
+Use Cases: Event processing, Serverless backends, ETL
+Alternatives: Fargate, EC2
+Decision Factors: Best for short-running workloads, Pay-per-use model
+
+Dynamodb: A NoSQL database service for serverless architectures.
+Benefits: Fully managed, Highly available, Low latency
+Use Cases: High throughput applications, Serverless architectures, Real-time apps
+Alternatives: Aurora, RDS
+Decision Factors: Schema-less design, Cost-effective for NoSQL workloads
+
+Athena: A serverless query service for analyzing data directly in S3 using standard SQL.
+Benefits: No ETL required, Serverless, Cost-effective for on-demand queries
+Use Cases: Data lake analytics, Ad hoc querying, Log analysis
+Alternatives: BigQuery, Redshift Spectrum
+Decision Factors: Best for querying data in S3 without data movement
+
+Glue: A serverless data integration service for preparing and transforming data.
+Benefits: Simplified ETL, Scalable, Integrated with AWS analytics services
+Use Cases: Data pipelines, Data preparation for analytics, Cataloging datasets
+Alternatives: Azure Data Factory, Google Cloud Dataflow
+Decision Factors: Best for ETL workflows on AWS, Supports Python and Spark
+
+Elastic Load Balancer: Distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses.
+Benefits: Improves availability, Supports auto-scaling, Handles fault tolerance
+Use Cases: High-traffic web applications, Microservices architectures, Hybrid cloud setups
+Alternatives: API Gateway (for APIs), Nginx (custom setups)
+Decision Factors: Best for load balancing across instances or containers, Supports HTTP/HTTPS and TCP protocols
