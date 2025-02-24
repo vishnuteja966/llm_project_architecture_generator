@@ -44,12 +44,12 @@ streamlit run app.py
 - **Collaboration Tools** (Multi-user support)
 
 ## Contributors
-- **Your Name** - Santhosh, Vishnu Teja
+- Santhosh, Vishnu Teja
 
 ## Video Demo
 [LLM_Project_Output-Video.mp4](..%2FLLM_Project_Output-Video.mp4)
 
 
 ## Architecture Diagram!
-![img_1.png](img_1.png)
+![img_1.png](Architecture.png)
 
