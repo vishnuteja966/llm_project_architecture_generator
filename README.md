@@ -44,7 +44,7 @@ streamlit run app.py
 - **Collaboration Tools** (Multi-user support)
 
 ## Contributors
-- **Your Name** - [GitHub](https://github.com/your-profile)
+- **Your Name** - Santhosh, Vishnu Teja
 
 ## Video Demo
 [LLM_Project_Output-Video.mp4](..%2FLLM_Project_Output-Video.mp4)
